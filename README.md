@@ -1,31 +1,6 @@
-<<<<<<< HEAD
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
 XING Ruby on Rails Coding Challenge
-=====================================
+
 
 Welcome to the coding challenge.
 
@@ -58,7 +33,7 @@ Hints
 ------
 
 - OpenWeatherMap has an API to get the current weather: https://openweathermap.org/current
->>>>>>> ec51ed2e0423de7449366bfa407ac4d8cc8dd6ba
+
 
 
 

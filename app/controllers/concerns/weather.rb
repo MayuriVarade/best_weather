@@ -1,5 +1,5 @@
 module Weather
-extend ActiveSupport::Concern
+  extend ActiveSupport::Concern
 
   def parse_weather(weather_json)
     main = weather_json["weather"].first["main"]
@@ -11,6 +11,7 @@ extend ActiveSupport::Concern
     data = {"city" => city, "main" => main, "description" => description, "temp" => temp, "humidity" => humidity, "pressure" => pressure}
   end
 
+ #Logic to convert Kelvin to Degree
   def to_celcius(temp)
     temp - 273.15
   end 

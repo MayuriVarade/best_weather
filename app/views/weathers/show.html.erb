@@ -1,13 +1,18 @@
 <h2>Recommended City </h2>
 
-<p>Best City Weather:<%= @recommended_city %></p>
+<p>Best City: <%= @recommended_city %></p>
 
-<h2> All cities weather </h2>
-<% for weather in @weather_all_cities %>
-	<h3><%= weather["city"] %></h3>
-	<p><%= weather["main"] %></p>
-	<p><%= weather["description"] %></p>
-	<p><%= weather["temp"] %> degs</p>
-	<p><%= weather["humidity"] %>%</p>
-	<p><%= weather["pressure"] %> hPa</p>
-<% end %>
+<table style="width:100%">
+  <caption> All cities weather</caption>
+  <% for weather in @weather_all_cities %>
+  <tr>
+    <th>City:<%=weather["city"] %></th>
+    <td>Weather Conition:<%= weather["main"] %></td>
+    <td>Weather Details: <%= weather["description"] %></td>
+    <td>Temperature: <%= weather["temp"] %> degs</td>
+    <td>Humidity: <%= weather["humidity"] %>%</td>
+    <td>Pressure: <%= weather["pressure"] %> hPa </td>
+  </tr>
+ 
+  <% end %>
+</table>
